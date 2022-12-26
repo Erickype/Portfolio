@@ -1,11 +1,11 @@
 import { pb } from "../lib/pocketbase";
-import type { LayoutLoad } from "./$types";
+import type { LayoutServerLoad } from "./$types";
 
 export const load = (async () => {
     return {
         posts: await fectMenus()
     }
-}) satisfies LayoutLoad
+}) satisfies LayoutServerLoad
 
 async function fectMenus():Promise<Array<{[key:string]:any}>>{
     const response = await pb.collection('menus').getList();
