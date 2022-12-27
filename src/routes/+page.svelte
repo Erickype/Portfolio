@@ -1,3 +1,9 @@
+<script lang="ts">
+	import type { LayoutData } from "./$types";
+
+    export let data:LayoutData
+</script>
+
 <div class="w-full mx-auto">
 	<div
 		class="w-full shadow-2xl subpixel-antialiased rounded h-auto bg-black border-black mx-auto"
@@ -25,6 +31,7 @@
 		<div class="pl-1 pt-1 h-auto  text-green-200 font-mono text-xs bg-black" id="console">
 			<p class="pb-1">Last login: Wed Sep 25 09:11:04 on ttys002</p>
 			<p class="pb-1">Erick_Carrasco:Software_Engineer$</p>
+			<p class="pb-1">Erick_Carrasco:Software_Engineer$ {data.posts[0].id}</p>
 		</div>
 	</div>
 </div>
