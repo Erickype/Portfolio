@@ -5,12 +5,16 @@
 	export let data: LayoutData;
 </script>
 
-<nav class="menus">
-	{#each data.posts as menu (menu.id)}
-		<button class="bg-slate-300 hover:bg-slate-500 font-medium">
-			<a href="/{menu.menuUrl}">{menu.menuName}</a>
-		</button>
-	{/each}
-</nav>
+<div class="">
+	<nav class="flex justify-center space-x-4">
+		{#each data.posts as menu (menu.id)}
+			<a
+				href="/{menu.menuUrl}"
+				class="rounded-lg px-3 py-2 text-slate-700 font-medium hover:bg-slate-200 hover:text-slate-900 active:bg-slate-300"
+				>{menu.menuName}</a
+			>
+		{/each}
+	</nav>
+</div>
 
 <slot />
