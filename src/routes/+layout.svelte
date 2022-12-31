@@ -5,7 +5,7 @@
 	export let data: LayoutData;
 </script>
 
-<div class="h-screen max-h-screen static overflow-hidden">
+<div class="flex flex-col h-screen overflow-hidden">
 	<div class="bg-darkBlue columns-2">
 		<nav class="flex justify-start">
 			<a
@@ -25,9 +25,11 @@
 		</nav>
 	</div>
 
-	<slot />
+	<div class="flex-grow">
+		<slot />
+	</div>
 
-	<div class="bg-darkBlue w-screen absolute bottom-0">
+	<div class="bg-darkBlue w-screen">
 		<footer class="text-white text-center font-semibold text-lg">
 			<a href="/">Footer</a>
 		</footer>
