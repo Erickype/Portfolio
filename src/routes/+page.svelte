@@ -1,4 +1,4 @@
-<div class="w-screen h-screen overflow-auto">
+<div class="h-auto min-h-full overflow-auto">
 	<div class="bg-blue h-2/5 py-10 inline-flex">
 		<div class="px-5 text-white overflow-hidden w-2/3">
 			<h1 class=" text-center font-bold text-2xl flex-auto">Erick Carrasco</h1>
@@ -20,6 +20,10 @@
 			/>
 		</div>
 	</div>
-	<div class="bg-skyBlue h-3/5 py-10 grid grid-cols-4 text-white">
+	<div class="bg-skyBlue grid grid-cols-4 text-darkBlue text-center text-lg mx-auto h-auto min-h-full">
+		<div class="bg-white my-10">1</div>
+		<div class="mx-auto bg-green w-auto min-w-full">2</div>
+		<div class="mx-auto bg-white w-auto min-w-full">3</div>
+		<div class="mx-auto bg-green w-auto min-w-full">4</div>
 	</div>
 </div>
