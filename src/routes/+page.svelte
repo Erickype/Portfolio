@@ -1,6 +1,6 @@
 <div class="w-screen h-screen overflow-auto">
-	<div class="bg-blue h-1/2 columns-2 py-10 block flex-auto">
-		<div class="px-5 text-white overflow-hidden">
+	<div class="bg-blue h-2/5 py-10 inline-flex">
+		<div class="px-5 text-white overflow-hidden w-2/3">
 			<h1 class=" text-center font-bold text-2xl flex-auto">Erick Carrasco</h1>
 			<p class="text-base py-2 flex-auto">
 				I am a skilled software engineer with experience in a variety of programming languages and
@@ -12,7 +12,7 @@
 				touch.
 			</p>
 		</div>
-		<div class="flex items-center justify-center h-auto min-h-full overflow-hidden">
+		<div class="flex items-center justify-center h-auto min-h-full overflow-hidden w-1/3">
 			<img
 				class="mx-auto"
 				src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6xMy3lYAo5Xb8tZ5rG4wWIDa-2zzfi8mE745Kr0YAMJkH3C9PvB7yZlZ96LXF8KE9MyE&usqp=CAU"
@@ -20,6 +20,6 @@
 			/>
 		</div>
 	</div>
-	<div class="bg-skyBlue h-1/2 columns-2 py-10">
+	<div class="bg-skyBlue h-3/5 py-10 grid grid-cols-4 text-white">
 	</div>
 </div>
