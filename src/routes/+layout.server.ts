@@ -1,14 +1,24 @@
+import type { IMenu } from "$lib/interfaces/iMenu";
 import { pb } from "../lib/pocketbase";
 import type { LayoutServerLoad } from "./$types";
 
 export const load = (async () => {
     return {
-        posts: await fectMenus()
+        menus: await fetchMenus()
     }
 }) satisfies LayoutServerLoad
 
-async function fectMenus():Promise<Array<{[key:string]:any}>>{
-    const response = await pb.collection('menus').getList();
-    const data = response.items.map((post) => post.export())
+
+async function fetchMenus() {
+    const response = await pb.collection("menus").getList<IMenu>()
+
+    const data = response.items.map((res) => {
+        return {
+            id: res.id,
+            menuName: res.menuName,
+            menuUrl: res.menuUrl
+        }
+    })
+
     return data
 }
