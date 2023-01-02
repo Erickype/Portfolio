@@ -1,3 +1,9 @@
+<script lang="ts">
+	import type { PageServerData } from './$types';
+
+	export let data: PageServerData;
+</script>
+
 <div class="flex flex-col h-auto min-h-full overflow-auto">
 	<div class="bg-blue h-2/5 py-10 inline-flex">
 		<div class="px-5 text-white overflow-hidden w-2/3">
@@ -20,58 +26,23 @@
 			/>
 		</div>
 	</div>
-	<div class="bg-skyBlue grid grid-cols-4 text-darkBlue text-center text-lg flex-grow">
-		<div class="bg-white my-10 mx-5 rounded-xl p-4 relative">
-			<div class="text-xl font-bold mb-4">Card Title</div>
-			<div class="text-darkBlue mb-4 pb-10">
-				<p>
-					Card body content goes here Card body content goes here Card body content goes here Card
-					body content goes here Card body content goes here Card body content goes here Card body
-					content goes here
-				</p>
+	<div
+		class="bg-skyBlue grid grid-cols-3 text-darkBlue text-center text-lg flex-grow"
+	>
+		{#each data.contents as content (content.id)}
+			<div class="bg-white my-10 mx-5 rounded-xl p-4 relative">
+				<div class="text-xl font-bold mb-4">{content.titleContent}</div>
+				<div class="text-darkBlue mb-4 pb-10">
+					<p>
+						{content.bodyContent}
+					</p>
+				</div>
+				<div class="absolute left-0 right-0 bottom-0 p-4">
+					<button class="bg-blue text-white px-4 py-2 rounded-full basis-1/2"
+						>{content.actionContent}</button
+					>
+				</div>
 			</div>
-			<div class="absolute left-0 right-0 bottom-0 p-4">
-				<button class="bg-blue text-white px-4 py-2 rounded-full basis-1/2">Action</button>
-			</div>
-		</div>
-		<div class="bg-green my-10 mx-5 rounded-xl p-4 relative">
-			<div class="text-xl font-bold mb-4">Card Title</div>
-			<div class="text-darkBlue mb-4 pb-10">
-				<p>
-					Card body content goes here Card body content goes here Card body content goes here Card
-					body content goes here Card body content goes here Card body content goes here Card body
-					content goes here
-				</p>
-			</div>
-			<div class="absolute left-0 right-0 bottom-0 p-4">
-				<button class="bg-blue text-white px-4 py-2 rounded-full basis-1/2">Action</button>
-			</div>
-		</div>
-		<div class="bg-white my-10 mx-5 rounded-xl p-4 relative">
-			<div class="text-xl font-bold mb-4">Card Title</div>
-			<div class="text-darkBlue mb-4 pb-10">
-				<p>
-					Card body content goes here Card body content goes here Card body content goes here Card
-					body content goes here Card body content goes here Card body content goes here Card body
-					content goes here
-				</p>
-			</div>
-			<div class="absolute left-0 right-0 bottom-0 p-4">
-				<button class="bg-blue text-white px-4 py-2 rounded-full basis-1/2">Action</button>
-			</div>
-		</div>
-		<div class="bg-green my-10 mx-5 rounded-xl p-4 relative">
-			<div class="text-xl font-bold mb-4">Card Title</div>
-			<div class="text-darkBlue mb-4 pb-10">
-				<p>
-					Card body content goes here Card body content goes here Card body content goes here Card
-					body content goes here Card body content goes here Card body content goes here Card body
-					content goes here
-				</p>
-			</div>
-			<div class="absolute left-0 right-0 bottom-0 p-4">
-				<button class="bg-blue text-white px-4 py-2 rounded-full basis-1/2">Action</button>
-			</div>
-		</div>
+		{/each}
 	</div>
 </div>
