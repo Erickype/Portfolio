@@ -25,8 +25,15 @@
 		</nav>
 	</div>
 
-	<div class="flex-grow overflow-auto">
-		<slot />
+	<div class="flex flex-row flex-grow overflow-y-hidden">
+		<div class="bg-darkBlue w-auto min-w-max min-h-full flex flex-col text-white text-center px-5">
+			<a href="a">a</a>
+			<a href="a">a</a>
+		</div>
+
+		<div class="overflow-y-auto">
+			<slot />
+		</div>
 	</div>
 
 	<div class="bg-darkBlue w-screen">
