@@ -31,7 +31,7 @@
 			<a href="a">a</a>
 		</div>
 
-		<div class="overflow-y-auto">
+		<div class="overflow-y-auto w-full">
 			<slot />
 		</div>
 	</div>
