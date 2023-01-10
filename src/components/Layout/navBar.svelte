@@ -1,5 +1,7 @@
 <script lang="ts">
-    export let data: { menus: any; }
+	import type { LayoutData } from "../../routes/$types";
+
+    export let data: LayoutData
 </script>
 
 <div class="bg-darkBlue columns-2">
