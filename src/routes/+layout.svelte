@@ -1,6 +1,7 @@
 <script lang="ts">
 	import '../app.css';
 	import type { LayoutData } from './$types';
+	import SideBar from '../components/sideBar.svelte';
 
 	export let data: LayoutData;
 </script>
@@ -26,11 +27,7 @@
 	</div>
 
 	<div class="flex flex-row flex-grow overflow-y-hidden">
-		<div class="bg-darkBlue w-auto min-w-max min-h-full flex flex-col text-white text-center px-5">
-			<a href="a">a</a>
-			<a href="a">a</a>
-		</div>
-
+		<SideBar></SideBar>
 		<div class="overflow-y-auto w-full">
 			<slot />
 		</div>
