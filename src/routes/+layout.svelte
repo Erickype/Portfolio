@@ -1,30 +1,15 @@
 <script lang="ts">
 	import '../app.css';
 	import type { LayoutData } from './$types';
-	import SideBar from '../components/sideBar.svelte';
+	import SideBar from '../components/Layout/sideBar.svelte';
+	import NavBar from '../components/Layout/navBar.svelte';
+	import Footer from '../components/Layout/footer.svelte';
 
 	export let data: LayoutData;
 </script>
 
 <div class="flex flex-col h-screen">
-	<div class="bg-darkBlue columns-2">
-		<nav class="flex justify-start">
-			<a
-				href="/"
-				class="rounded-lg px-3 py-2 text-white font-medium hover:bg-green hover:text-blue active:bg-skyBlue"
-				>Email</a
-			>
-		</nav>
-		<nav class="flex justify-end space-x-4">
-			{#each data.menus as menu (menu.id)}
-				<a
-					href="/{menu.menuUrl}"
-					class="rounded-lg px-3 py-2 text-white font-medium hover:bg-green hover:text-blue active:bg-skyBlue"
-					>{menu.menuName}</a
-				>
-			{/each}
-		</nav>
-	</div>
+	<NavBar {data}></NavBar>
 
 	<div class="flex flex-row flex-grow overflow-y-hidden">
 		<SideBar></SideBar>
@@ -33,9 +18,5 @@
 		</div>
 	</div>
 
-	<div class="bg-darkBlue w-screen">
-		<footer class="text-white text-center font-semibold text-lg">
-			<a href="/">Footer</a>
-		</footer>
-	</div>
+	<Footer></Footer>
 </div>
