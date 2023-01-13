@@ -21,13 +21,14 @@
 
 <div class="grid">
 	{#each data.contents as content (content.id)}
-		<div>
-			<h3>{content.titleContent}</h3>
+		<article>
+			<header><h5>{content.titleContent}</h5></header>
 			<p>
 				{content.bodyContent}
 			</p>
-
-			<button>{content.actionContent}</button>
-		</div>
+			<footer>
+				<button>{content.actionContent}</button>
+			</footer>
+		</article>
 	{/each}
 </div>
