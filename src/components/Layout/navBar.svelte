@@ -5,7 +5,12 @@
 </script>
 
 <nav>
-	{#each data.menus as menu (menu.id)}
-		<a href="/{menu.menuUrl}">{menu.menuName}</a>
-	{/each}
+	<ul>
+		<li><strong>Portfolio</strong></li>
+	</ul>
+	<ul>
+		{#each data.menus as menu (menu.id)}
+			<li><a href="/{menu.menuUrl}">{menu.menuName}</a></li>
+		{/each}
+	</ul>
 </nav>
