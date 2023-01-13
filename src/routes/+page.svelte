@@ -4,24 +4,30 @@
 	export let data: PageServerData;
 </script>
 
-<h1>
-	<p>
-		Hello, <br />
-		I'm Erick <br />
-		Software Engineer
-	</p>
-</h1>
+<div class="grid">
+	<h1>
+		<p>
+			Hello, <br />
+			I'm Erick <br />
+			Software Engineer
+		</p>
+	</h1>
+	<span />
+	<img
+		src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6xMy3lYAo5Xb8tZ5rG4wWIDa-2zzfi8mE745Kr0YAMJkH3C9PvB7yZlZ96LXF8KE9MyE&usqp=CAU"
+		alt="portrait"
+	/>
+</div>
 
-<img
-	src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6xMy3lYAo5Xb8tZ5rG4wWIDa-2zzfi8mE745Kr0YAMJkH3C9PvB7yZlZ96LXF8KE9MyE&usqp=CAU"
-	alt="portrait"
-/>
+<div class="grid">
+	{#each data.contents as content (content.id)}
+		<div>
+			<h3>{content.titleContent}</h3>
+			<p>
+				{content.bodyContent}
+			</p>
 
-{#each data.contents as content (content.id)}
-	{content.titleContent}
-	<p>
-		{content.bodyContent}
-	</p>
-
-	<button>{content.actionContent}</button>
-{/each}
+			<button>{content.actionContent}</button>
+		</div>
+	{/each}
+</div>
