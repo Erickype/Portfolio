@@ -11,9 +11,10 @@
 
 <main class="container">
 	<NavBar {data} />
-
-	<SideBar />
-	<slot />
-
-	<Footer />
+	<section>
+		<slot />
+	</section>
+	<section>
+		<Footer />
+	</section>
 </main>
