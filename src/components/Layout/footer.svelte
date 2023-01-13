@@ -1,5 +1,3 @@
-<div >
-    <footer >
-        <a href="/">Footer</a>
-    </footer>
-</div>
+<footer>
+	<a href="/">Footer</a>
+</footer>

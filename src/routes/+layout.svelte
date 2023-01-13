@@ -9,15 +9,11 @@
 	export let data: LayoutData;
 </script>
 
-<div>
+<main class="container">
 	<NavBar {data} />
 
-	<div>
-		<SideBar />
-		<div>
-			<slot />
-		</div>
-	</div>
+	<SideBar />
+	<slot />
 
 	<Footer />
-</div>
+</main>
