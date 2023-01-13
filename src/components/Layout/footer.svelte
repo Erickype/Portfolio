@@ -1,5 +1,5 @@
-<div class="bg-darkBlue w-screen">
-    <footer class="text-white text-center font-semibold text-lg">
+<div >
+    <footer >
         <a href="/">Footer</a>
     </footer>
 </div>
