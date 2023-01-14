@@ -1,5 +1,9 @@
-<div class="bg-darkBlue w-screen">
-    <footer class="text-white text-center font-semibold text-lg">
-        <a href="/">Footer</a>
-    </footer>
-</div>
+<footer>
+	<strong>Erick Carrasco</strong>
+</footer>
+
+<style>
+	footer {
+		margin-bottom: 1em;
+	}
+</style>
