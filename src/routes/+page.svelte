@@ -31,7 +31,7 @@
 				</p>
 			</div>
 			<footer>
-				<a href="more/{content.titleContent}">
+				<a href="more/{content.titleContent}" role="button" class="moreButton">
 					<small>
 						{content.actionContent}
 					</small>
@@ -45,5 +45,8 @@
 	#content{
 		height: 100%;
 		max-height: 150px;
+	}
+	.moreButton{
+		width: 100%;
 	}
 </style>
