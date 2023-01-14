@@ -31,7 +31,7 @@
 				</p>
 			</div>
 			<footer>
-				<a href="/">
+				<a href="{content.titleContent}">
 					<small>
 						{content.actionContent}
 					</small>
