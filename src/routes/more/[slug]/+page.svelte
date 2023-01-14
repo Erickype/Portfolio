@@ -1,10 +1,13 @@
 <script lang="ts">
+	import { imageStoreUrl } from '$lib/constants';
 	import type { PageData } from './$types';
 
 	export let data: PageData;
-    console.log(data.moreAboutContent[0]);
-    
 </script>
 
-<h1>{data.moreAboutContent[0].projectName}</h1>
-<div>{@html data.moreAboutContent[0].description}</div>
+{#each data.moreAboutContent as moreContent (moreContent.id)}
+	<h4>{moreContent.projectName}</h4>
+	<div>{moreContent.description}</div>
+	<img src="{imageStoreUrl}/{moreContent.id}/{moreContent.image}" alt="{moreContent.projectName}">
+	<a href="{moreContent.url}">Github</a>
+{/each}
