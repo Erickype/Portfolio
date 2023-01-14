@@ -22,7 +22,9 @@
 <div class="grid">
 	{#each data.contents as content (content.id)}
 		<article>
-			<header><h5>{content.titleContent}</h5></header>
+			<header>
+				<h5>{content.titleContent}</h5>
+			</header>
 			<p>
 				{content.bodyContent}
 			</p>
