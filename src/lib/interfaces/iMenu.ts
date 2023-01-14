@@ -10,3 +10,12 @@ export interface IMenuContents{
     bodyContent: string,
     actionContent: string
 }
+
+export interface IMoreAboutContent{
+    id: string,
+    projectName: string,
+    description: string,
+    url: URL,
+    image: ImageData,
+    mainContentId: string
+}
