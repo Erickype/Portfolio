@@ -6,7 +6,6 @@
 
 <nav>
 	<ul>
-		<li><strong>Portfolio</strong></li>
 	</ul>
 	<ul>
 		{#each data.menus as menu (menu.id)}
