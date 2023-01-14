@@ -31,7 +31,7 @@
 				</p>
 			</div>
 			<footer>
-				<a href="{content.titleContent}">
+				<a href="more/{content.titleContent}">
 					<small>
 						{content.actionContent}
 					</small>
