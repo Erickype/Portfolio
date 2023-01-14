@@ -35,6 +35,12 @@
 			{/if}
 		</div>
 	</main>
+{:else}
+	<main class="container">
+		<h1>
+			There is nothing here, ups!
+		</h1>
+	</main>
 {/each}
 
 <style>
