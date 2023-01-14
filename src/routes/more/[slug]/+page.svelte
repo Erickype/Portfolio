@@ -5,9 +5,48 @@
 	export let data: PageData;
 </script>
 
-{#each data.moreAboutContent as moreContent (moreContent.id)}
-	<h4>{moreContent.projectName}</h4>
-	<div>{moreContent.description}</div>
-	<img src="{imageStoreUrl}/{moreContent.id}/{moreContent.image}" alt="{moreContent.projectName}">
-	<a href="{moreContent.url}">Github</a>
+{#each data.moreAboutContent as moreContent, i}
+	<main class="container">
+		<div class="grid">
+			{#if i % 2 == 0}
+				<div>
+					<h4>{moreContent.projectName}</h4>
+					<p>{moreContent.description}</p>
+					<a href={moreContent.url}>Github</a>
+				</div>
+				<div class="imageCell">
+					<img
+						src="{imageStoreUrl}/{moreContent.id}/{moreContent.image}"
+						alt={moreContent.projectName}
+					/>
+				</div>
+			{:else}
+				<div class="imageCell">
+					<img
+						src="{imageStoreUrl}/{moreContent.id}/{moreContent.image}"
+						alt={moreContent.projectName}
+					/>
+				</div>
+				<div>
+					<h4>{moreContent.projectName}</h4>
+					<p>{moreContent.description}</p>
+					<a href={moreContent.url}>Github</a>
+				</div>
+			{/if}
+		</div>
+	</main>
 {/each}
+
+<style>
+	.container{
+		margin-top: 20px;
+	}
+	.imageCell {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	img {
+		margin: auto;
+	}
+</style>
