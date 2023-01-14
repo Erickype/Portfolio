@@ -21,16 +21,29 @@
 
 <div class="grid">
 	{#each data.contents as content (content.id)}
-		<article>
-			<header>
-				<h5>{content.titleContent}</h5>
-			</header>
-			<p>
-				{content.bodyContent}
-			</p>
+		<article id="article">
+			<div id="content">
+				<h5>
+					{content.titleContent}
+				</h5>
+				<p>
+					{content.bodyContent}
+				</p>
+			</div>
 			<footer>
-				<button>{content.actionContent}</button>
+				<a href="/">
+					<small>
+						{content.actionContent}
+					</small>
+				</a>
 			</footer>
 		</article>
 	{/each}
 </div>
+
+<style>
+	#content{
+		height: 100%;
+		max-height: 150px;
+	}
+</style>
