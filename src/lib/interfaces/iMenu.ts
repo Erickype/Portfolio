@@ -15,7 +15,7 @@ export interface IMoreAboutContent{
     id: string,
     projectName: string,
     description: string,
-    url: URL,
-    image: ImageData,
+    url?: string,
+    image?: ImageData,
     mainContentId: string
 }
