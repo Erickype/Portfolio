@@ -15,7 +15,7 @@
 	</div>
 	<label for="comment">
 		Your message
-		<input type="textarea" id="comment" name="comment" placeholder="Your message" required />
+        <textarea id="comment" name="comment" placeholder="Your message" required rows="2" cols="40"></textarea>
 	</label>
 	<!-- Markup example 2: input is after label -->
 	<label for="email">Email address</label>
