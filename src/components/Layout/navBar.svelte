@@ -5,11 +5,16 @@
 </script>
 
 <nav>
-	<ul>
-	</ul>
+	<ul />
 	<ul>
 		{#each data.menus as menu (menu.id)}
-			<li><a href="/{menu.menuUrl}">{menu.menuName}</a></li>
+			<li>
+				<a href="/{menu.menuUrl}" class="contrast">
+					<u>
+						{menu.menuName}
+					</u>
+				</a>
+			</li>
 		{/each}
 	</ul>
 </nav>
