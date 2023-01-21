@@ -7,44 +7,42 @@
 
 {#each data.moreAboutContent as moreContent, i}
 	<main class="container">
-		<div class="grid">
-			{#if i % 2 == 0}
-				<div>
-					<h4>{moreContent.projectName}</h4>
-					<p>{moreContent.description}</p>
-					<a href={moreContent.url}>Github</a>
-				</div>
-				<div class="imageCell">
-					<img
-						src="{imageStoreUrl}/{moreContent.id}/{moreContent.image}"
-						alt={moreContent.projectName}
-					/>
-				</div>
-			{:else}
-				<div class="imageCell">
-					<img
-						src="{imageStoreUrl}/{moreContent.id}/{moreContent.image}"
-						alt={moreContent.projectName}
-					/>
-				</div>
-				<div>
-					<h4>{moreContent.projectName}</h4>
-					<p>{moreContent.description}</p>
-					<a href={moreContent.url}>Github</a>
-				</div>
-			{/if}
-		</div>
+		<article>
+			<div class="grid">
+				{#if i % 2 == 0}
+					<div>
+						<h4>{moreContent.projectName}</h4>
+						<p>{moreContent.description}</p>
+						<a href={moreContent.url}>Github</a>
+					</div>
+					<div class="imageCell">
+						<img
+							src="{imageStoreUrl}/{moreContent.id}/{moreContent.image}"
+							alt={moreContent.projectName}
+						/>
+					</div>
+				{:else}
+					<div class="imageCell">
+						<img
+							src="{imageStoreUrl}/{moreContent.id}/{moreContent.image}"
+							alt={moreContent.projectName}
+						/>
+					</div>
+					<div>
+						<h4>{moreContent.projectName}</h4>
+						<p>{moreContent.description}</p>
+						<a href={moreContent.url}>Github</a>
+					</div>
+				{/if}
+			</div>
+		</article>
 	</main>
 {:else}
-	<main class="container">
-		<h1>
-			There is nothing here, ups!
-		</h1>
-	</main>
+	<h1>There is nothing here, ups!</h1>
 {/each}
 
 <style>
-	.container{
+	.container {
 		margin-top: 20px;
 	}
 	.imageCell {
@@ -54,5 +52,9 @@
 	}
 	img {
 		margin: auto;
+	}
+	article {
+		padding: 1em;
+		margin: 1em;
 	}
 </style>
