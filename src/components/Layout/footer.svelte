@@ -1,15 +1,16 @@
-<main class="container">
-	<footer>
-		<hgroup>
-			<h5>Erick Carrasco</h5>
-			<h6><a href="mailto:erickype@hotmail.com">erickype@hotmail.com</a></h6>
-		</hgroup>
-	</footer>
-</main>
+<hgroup>
+	<h6>Erick Carrasco</h6>
+	<a href="mailto:erickype@hotmail.com">erickype@hotmail.com</a>
+</hgroup>
 
 <style>
-	footer {
-		margin-bottom: 1em;
+	hgroup {
+		margin: auto;
+		padding: 1em;
 		text-align: center;
+		background-color: var(--primary);
+	}
+	h6, a{
+		color: aliceblue;
 	}
 </style>
