@@ -1,6 +1,6 @@
 <script lang="ts">
 	import '@picocss/pico';
-	import '../app.css'
+	import '../app.css';
 
 	import type { LayoutData } from './$types';
 	import NavBar from '../components/Layout/navBar.svelte';
@@ -15,5 +15,6 @@
 	<section>
 		<slot />
 	</section>
-	<Footer />
 </main>
+
+<Footer />
