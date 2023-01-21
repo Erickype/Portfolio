@@ -9,12 +9,18 @@
 	<ul>
 		{#each data.menus as menu (menu.id)}
 			<li>
-				<a href="/{menu.menuUrl}" class="contrast">
-					<u>
+				<a href="/{menu.menuUrl}" role="button">
 						{menu.menuName}
-					</u>
 				</a>
 			</li>
 		{/each}
 	</ul>
 </nav>
+
+<style>
+	nav{
+		padding-right: 2em;
+		background-color: var(--primary);
+		margin-bottom: 1em;
+	}
+</style>
