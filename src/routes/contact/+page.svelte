@@ -1,11 +1,18 @@
-<h1>Contact</h1>
+<h3>Contact</h3>
 
 <article>
 	<form>
-		<label for="name">
-			Your name
-			<input type="text" id="name" name="firstname" placeholder="First name" required />
-		</label>
+		<div class="grid">
+			<label for="name">
+				Your name
+				<input type="text" id="name" name="firstname" placeholder="First name" required />
+			</label>
+			<label for="email"
+				>Email address
+				<input type="email" id="email" name="email" placeholder="Email address" required />
+			</label>
+		</div>
+
 		<label for="comment">
 			Your message
 			<textarea
@@ -17,12 +24,16 @@
 				cols="40"
 			/>
 		</label>
-		<!-- Markup example 2: input is after label -->
-		<label for="email">Email address</label>
-		<input type="email" id="email" name="email" placeholder="Email address" required />
-		<small>I'll never share your email with anyone else.</small>
 
-		<!-- Button -->
 		<button type="submit">Submit</button>
 	</form>
 </article>
+
+<style>
+	article{
+		padding-top: 2em;
+		padding-bottom: 1em;
+		margin-top: 1em;
+		margin-bottom: 1em;
+	}
+</style>
