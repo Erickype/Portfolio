@@ -1,9 +1,13 @@
 <script lang="ts">
 	import { imageStoreUrl } from '$lib/constants';
 	import type { PageData } from './$types';
+	import { page } from '$app/stores';
 
 	export let data: PageData;
+	
 </script>
+
+<h3>{$page.params.slug} Projects</h3>
 
 {#each data.moreAboutContent as moreContent, i}
 	<main class="container">
