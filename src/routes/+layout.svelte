@@ -9,8 +9,9 @@
 	export let data: LayoutData;
 </script>
 
+<NavBar {data} />
+
 <main class="container">
-	<NavBar {data} />
 	<section>
 		<slot />
 	</section>
