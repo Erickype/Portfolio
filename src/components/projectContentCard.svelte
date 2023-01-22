@@ -16,8 +16,10 @@
 
 					<div id="content">
 						<p>{moreContent.description}</p>
-						<a href={moreContent.url}>Github</a>
 					</div>
+					<footer>
+						<a href={moreContent.url} role="button">Github</a>
+					</footer>
 				</article>
 				<div class="imageCell">
 					<img
@@ -39,8 +41,10 @@
 
 					<div id="content">
 						<p>{moreContent.description}</p>
-						<a href={moreContent.url}>Github</a>
 					</div>
+					<footer>
+						<a href={moreContent.url} role="button">Github</a>
+					</footer>
 				</article>
 			{/if}
 		</div>
@@ -65,6 +69,7 @@
 	.contentArticle {
 		margin: 0;
 		padding: 0;
+		position: relative;
 	}
 	header {
 		margin: 0;
@@ -78,14 +83,15 @@
 		padding-bottom: 0.5em;
 	}
 	#content {
-		height: 85%;
+		height: 150px;
 		padding: 1em;
-		position: relative;
 	}
-	a {
-		position: absolute;
-		bottom: 1em;
+	footer {
+		margin: 0;
+		padding: 0.5em;
 		text-align: center;
-		margin: auto;
+		position: absolute;
+		bottom: 0;
+		width: 100%;
 	}
 </style>
