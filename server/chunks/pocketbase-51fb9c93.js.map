@@ -1,0 +1,1 @@
+{"version":3,"file":"pocketbase-51fb9c93.js","sources":["../../../.svelte-kit/adapter-node/chunks/pocketbase.js"],"sourcesContent":["import Pocketbase from \"pocketbase\";\nconst pb = new Pocketbase(\"http://127.0.0.1:8090\");\nexport {\n  pb as p\n};\n"],"names":[],"mappings":";;AACK,MAAC,EAAE,GAAG,IAAI,UAAU,CAAC,uBAAuB;;;;"}
