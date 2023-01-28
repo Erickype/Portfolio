@@ -2,6 +2,8 @@ import type { IMenu } from "$lib/interfaces/iMenu";
 import { pb } from "../lib/pocketbase";
 import type { LayoutServerLoad } from "./$types";
 
+export const prerender = true
+
 export const load = (async () => {
     return {
         menus: await fetchMenus()
