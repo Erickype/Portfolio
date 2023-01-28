@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import type { LayoutData } from '../../routes/$types';
 
 	export let data: LayoutData;
@@ -9,7 +10,7 @@
 	<ul>
 		{#each data.menus as menu (menu.id)}
 			<li>
-				<a href="/{menu.menuUrl}" role="button">
+				<a href="{base}/{menu.menuUrl}" role="button">
 						{menu.menuName}
 				</a>
 			</li>

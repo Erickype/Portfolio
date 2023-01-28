@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import type { PageServerData } from './$types';
 
 	export let data: PageServerData;
@@ -32,7 +33,7 @@
 				</p>
 			</div>
 			<footer>
-				<a href="more/{content.titleContent}" role="button" class="moreButton">
+				<a href="{base}/more/{content.titleContent}" role="button" class="moreButton">
 					<small>
 						{content.actionContent}
 					</small>
