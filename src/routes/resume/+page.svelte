@@ -24,7 +24,7 @@
 </hgroup>
 
 <article>
-	<a href="/resume.pdf" class="download" download="">
+	<a href="{base}/resume.pdf" class="download" download="">
 		<svg
 			version="1.1"
 			id="_x32_"
