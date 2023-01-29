@@ -54,4 +54,10 @@
 	img {
 		margin: auto;
 	}
+	kbd{
+		margin-top: 20px;
+	}
+	h1{
+		margin-bottom: 0px;
+	}
 </style>
