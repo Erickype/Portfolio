@@ -7,7 +7,13 @@
 	import Footer from '../components/Layout/footer.svelte';
 
 	export let data: LayoutData;
+
+	let title = "Erick Carrasco"
 </script>
+
+<svelte:head>
+   <title>{title}</title>
+</svelte:head>
 
 <NavBar {data} />
 
