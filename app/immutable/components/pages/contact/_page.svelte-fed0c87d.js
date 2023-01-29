@@ -1,4 +1,4 @@
-import{S as M,i as V,s as X,k as l,q as y,a as A,l as s,m as i,r as x,h as a,c as g,n as e,b as F,C as t,B as O}from"../../../chunks/index-d11e8e7c.js";function j(H){let u,q,L,p,n,m,f,B,c,C,h,Y,d,I,_,S,o,N,E,P;return{c(){u=l("h3"),q=y("Contact"),L=A(),p=l("article"),n=l("form"),m=l("div"),f=l("label"),B=y(`Your name\r
+import{S as M,i as V,s as X,k as l,q as y,a as A,l as s,m as i,r as x,h as a,c as g,n as e,b as F,C as t,B as O}from"../../../chunks/index-812d0a53.js";function j(H){let u,q,L,p,n,m,f,B,c,C,h,Y,d,I,_,S,o,N,E,P;return{c(){u=l("h3"),q=y("Contact"),L=A(),p=l("article"),n=l("form"),m=l("div"),f=l("label"),B=y(`Your name\r
 				`),c=l("input"),C=A(),h=l("label"),Y=y(`Email address\r
 				`),d=l("input"),I=A(),_=l("label"),S=y(`Your message\r
 			`),o=l("textarea"),N=A(),E=l("button"),P=y("Submit"),this.h()},l(r){u=s(r,"H3",{});var b=i(u);q=x(b,"Contact"),b.forEach(a),L=g(r),p=s(r,"ARTICLE",{class:!0});var k=i(p);n=s(k,"FORM",{});var v=i(n);m=s(v,"DIV",{class:!0});var T=i(m);f=s(T,"LABEL",{for:!0});var R=i(f);B=x(R,`Your name\r
