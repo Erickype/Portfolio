@@ -62,6 +62,43 @@
 			<h5>Software Engineer</h5>
 		</hgroup>
 	</div>
+	<h2>Skills</h2>
+	<div class="grid">
+		<ul>
+            <li>
+                <strong>Languages: </strong>Go, Java, Typescript, C#
+            </li>
+            <li>
+                <strong>Databases: </strong>Mysql, Postgres, MongoDB, Pocketbase, Oracle
+            </li>
+            <li>
+                <strong>Languages: </strong>Go, Java, Typescript, C#
+            </li>
+            <li>
+                <strong>Frameworks: </strong>Angular, Unity, Svelte y Sveltkit, SpringBoot
+            </li>
+        </ul>
+	</div>
+	<h2>Experience</h2>
+	<div class="grid">
+		<div>
+            <hgroup>
+                <h3>Empresa Eléctrica Ambato Regional Centro Norte</h3>
+                <h5>Software Engineer (intern)</h5>
+            </hgroup>
+            <ul>
+                <li>
+                    Software requirements especification for a intern process
+                </li>
+                <li>
+                    Develop of the backend application in Java with SpringBoot using Oracle DB
+                </li>
+                <li>
+                    Develop of the Frontend application in Angular
+                </li>
+            </ul>
+        </div>
+	</div>
 </article>
 
 <style>
