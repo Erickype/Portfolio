@@ -14,7 +14,7 @@
 		</p>
 	</h1>
 	<img
-		src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6xMy3lYAo5Xb8tZ5rG4wWIDa-2zzfi8mE745Kr0YAMJkH3C9PvB7yZlZ96LXF8KE9MyE&usqp=CAU"
+		src="{base}/profile.jpeg"
 		alt="portrait"
 	/>
 </div>
@@ -53,6 +53,8 @@
 	}
 	img {
 		margin: auto;
+		width: 150px;
+		height: 150px;
 	}
 	kbd{
 		margin-top: 20px;
