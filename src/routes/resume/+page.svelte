@@ -87,7 +87,7 @@
 				<h5>Software Engineer (intern)</h5>
 			</hgroup>
 			<ul>
-				<li>Software requirements especification for a intern process</li>
+				<li>Software requirements especification for an intern process</li>
 				<li>Develop of the backend application in Java with SpringBoot using Oracle DB</li>
 				<li>Develop of the Frontend application in Angular</li>
 			</ul>
