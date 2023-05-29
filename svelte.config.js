@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-static';
+import adapter from '@sveltejs/adapter-vercel';
 import { vitePreprocess } from '@sveltejs/kit/vite';
 
 const dev = process.argv.includes('dev');
@@ -12,9 +12,9 @@ const config = {
 	kit: {
 		adapter: adapter({}),
 		paths: {
-			base: dev ? '' : '/Portfolio',
+			base: dev ? '' : ''
 		},
-		appDir: "app"
+		appDir: 'app'
 	},
 	preprocess: vitePreprocess()
 };
