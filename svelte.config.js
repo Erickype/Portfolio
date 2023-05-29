@@ -12,9 +12,9 @@ const config = {
 	kit: {
 		adapter: adapter({}),
 		paths: {
-			base: dev ? '' : '/Portfolio',
+			base: dev ? '' : '/Portfolio'
 		},
-		appDir: "app"
+		appDir: 'app'
 	},
 	preprocess: vitePreprocess()
 };

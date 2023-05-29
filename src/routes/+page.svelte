@@ -13,10 +13,7 @@
 			Software Engineer
 		</p>
 	</h1>
-	<img
-		src="{base}/profile.jpeg"
-		alt="portrait"
-	/>
+	<img src="{base}/profile.jpeg" alt="portrait" />
 </div>
 
 <kbd>Principal skills</kbd>
@@ -44,11 +41,11 @@
 </div>
 
 <style>
-	#content{
+	#content {
 		height: 100%;
 		max-height: 150px;
 	}
-	.moreButton{
+	.moreButton {
 		width: 100%;
 	}
 	img {
@@ -56,10 +53,10 @@
 		width: 150px;
 		height: 150px;
 	}
-	kbd{
+	kbd {
 		margin-top: 20px;
 	}
-	h1{
+	h1 {
 		margin-bottom: 0px;
 	}
 </style>

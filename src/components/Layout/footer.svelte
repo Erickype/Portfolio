@@ -10,7 +10,8 @@
 		text-align: center;
 		background-color: var(--primary);
 	}
-	h6, a{
+	h6,
+	a {
 		color: aliceblue;
 	}
 </style>

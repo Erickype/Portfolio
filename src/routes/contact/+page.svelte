@@ -30,7 +30,7 @@
 </article>
 
 <style>
-	article{
+	article {
 		padding-top: 2em;
 		padding-bottom: 1em;
 		margin-top: 1em;

@@ -8,11 +8,11 @@
 
 	export let data: LayoutData;
 
-	let title = "Erick Carrasco"
+	let title = 'Erick Carrasco';
 </script>
 
 <svelte:head>
-   <title>{title}</title>
+	<title>{title}</title>
 </svelte:head>
 
 <NavBar {data} />

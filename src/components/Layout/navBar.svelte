@@ -11,7 +11,7 @@
 		{#each data.menus as menu (menu.id)}
 			<li>
 				<a href="{base}/{menu.menuUrl}" role="button">
-						{menu.menuName}
+					{menu.menuName}
 				</a>
 			</li>
 		{/each}
@@ -19,7 +19,7 @@
 </nav>
 
 <style>
-	nav{
+	nav {
 		padding-right: 2em;
 		background-color: var(--primary);
 		margin-bottom: 1em;
