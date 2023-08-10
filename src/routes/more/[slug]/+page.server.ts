@@ -32,6 +32,7 @@ async function getMoreAboutContent(slug: string) {
 		};
 		return item;
 	});
+	data.reverse()
 
 	return data;
 }
