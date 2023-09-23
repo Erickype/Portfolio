@@ -19,7 +19,7 @@
 				>
 			</li>
 			<li>
-				<a href="https://www.linkedin.com/in/erick-carrasco-santos-28789b177/">
+				<a href="https://www.linkedin.com/in/erick-carrasco-santos/">
 					<svg
 						aria-hidden="true"
 						focusable="false"
