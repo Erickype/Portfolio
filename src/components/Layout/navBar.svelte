@@ -5,7 +5,7 @@
 	export let data: LayoutData;
 </script>
 
-<nav>
+<nav class="navbar bg-base-200">
 	<ul />
 	<ul>
 		{#each data.menus as menu (menu.id)}
@@ -17,11 +17,3 @@
 		{/each}
 	</ul>
 </nav>
-
-<style>
-	nav {
-		padding-right: 2em;
-		background-color: var(--primary);
-		margin-bottom: 1em;
-	}
-</style>
