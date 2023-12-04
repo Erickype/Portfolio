@@ -6,14 +6,14 @@
 </script>
 
 <nav class="navbar bg-base-100">
-	<div class="flex-1">
+	<div class="flex-1 text-info font-bold">
 		<a class="btn btn-ghost text-xl" href="{base}/"> Erick's </a>
 	</div>
 	<div class="flex-none">
 		<ul class="menu menu-horizontal px-4">
 			{#each data.menus as menu (menu.id)}
 				{#if menu.menuUrl != ''}
-					<li>
+					<li class="text-success">
 						<a href="{base}/{menu.menuUrl}" role="button">
 							{menu.menuName}
 						</a>
