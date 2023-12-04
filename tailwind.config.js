@@ -5,20 +5,6 @@ export default {
   daisyui: {
     themes: [
       {
-        ligth: {
-
-          "primary": "#3b82f6",
-          "secondary": "#c7d2fb",
-          "accent": "#f6b6d1",
-          "neutral": "#f5f5f5",
-          "base-100": "#e6e6e6",
-          "info": "#b0cfff",
-          "success": "#80ffff",
-          "warning": "#fff580",
-          "error": "#ff8080",
-        },
-      },
-      {
         dark: {
           "primary": "#3b82f6",
           "secondary": "#8296af",
