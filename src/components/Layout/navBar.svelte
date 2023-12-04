@@ -5,7 +5,7 @@
 	export let data: LayoutData;
 </script>
 
-<nav class="navbar bg-base-200">
+<nav class="navbar bg-base-100">
 	<div class="flex-1">
 		<a class="btn btn-ghost text-xl" href="{base}/"> Erick's </a>
 	</div>
