@@ -6,7 +6,7 @@
 	<nav>
 		<header class="footer-title">Content</header>
 		<a class="link link-hover" href="/resume">About me</a>
-		<a class="link link-hover" href="/experience">Experience</a>
+		<a class="link link-hover" href="/resume">Experience</a>
 		<a class="link link-hover" href="/works">Works</a>
 	</nav>
 </footer>
