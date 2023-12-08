@@ -5,93 +5,42 @@
 	export let data: IMoreAboutContent[];
 </script>
 
-{#each data as moreContent, i}
-	<article>
-		<div class="grid">
-			{#if i % 2 == 0}
-				<article class="contentArticle">
-					<header>
-						<h5>{moreContent.projectName}</h5>
-					</header>
-
-					<div id="content">
-						<p>{moreContent.description}</p>
-					</div>
-					<footer>
-						<a href={moreContent.url} role="button">Github</a>
-					</footer>
-				</article>
-				<div class="imageCell">
+<div class="flex flex-col mx-auto p-4">
+	{#each data as moreContent, i}
+		{#if i % 2 == 0}
+			<div class="card lg:card-side bg-base-200 shadow-xl mb-4">
+				<figure class="lg:w-1/2 lg:h-1/2">
 					<img
 						src="{imageStoreUrl}/{moreContent.id}/{moreContent.image}"
 						alt={moreContent.projectName}
 					/>
+				</figure>
+				<div class="card-body">
+					<h2 class="card-title text-info">{moreContent.projectName}</h2>
+					<p>{moreContent.description}</p>
+					<div class="card-actions justify-end">
+						<a class="btn btn-secondary" href={moreContent.url}>Github</a>
+					</div>
 				</div>
-			{:else}
-				<div class="imageCell">
+			</div>
+		{:else}
+			<div class="card lg:card-side bg-base-200 shadow-xl mb-4">
+				<div class="card-body">
+					<h2 class="card-title text-info">{moreContent.projectName}</h2>
+					<p>{moreContent.description}</p>
+					<div class="card-actions justify-end">
+						<a class="btn btn-secondary" href={moreContent.url}>Github</a>
+					</div>
+				</div>
+				<figure class="lg:w-1/2 lg:h-1/2">
 					<img
 						src="{imageStoreUrl}/{moreContent.id}/{moreContent.image}"
 						alt={moreContent.projectName}
 					/>
-				</div>
-				<article class="contentArticle">
-					<header>
-						<h5>{moreContent.projectName}</h5>
-					</header>
-
-					<div id="content">
-						<p>{moreContent.description}</p>
-					</div>
-					<footer>
-						<a href={moreContent.url} role="button">Github</a>
-					</footer>
-				</article>
-			{/if}
-		</div>
-	</article>
-{:else}
-	<h1>There is nothing here, ups!</h1>
-{/each}
-
-<style>
-	.imageCell {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-	}
-	img {
-		margin: auto;
-	}
-	article {
-		padding: 1em;
-		margin: 1em;
-	}
-	.contentArticle {
-		margin: 0;
-		padding: 0;
-		position: relative;
-	}
-	header {
-		margin: 0;
-		padding: 0;
-		text-align: center;
-	}
-	h5 {
-		margin: auto;
-		padding: auto;
-		padding-top: 0.5em;
-		padding-bottom: 0.5em;
-	}
-	#content {
-		height: 150px;
-		padding: 1em;
-	}
-	footer {
-		margin: 0;
-		padding: 0.5em;
-		text-align: center;
-		position: absolute;
-		bottom: 0;
-		width: 100%;
-	}
-</style>
+				</figure>
+			</div>
+		{/if}
+	{:else}
+		<h1>There is nothing here, ups!</h1>
+	{/each}
+</div>

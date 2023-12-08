@@ -5,23 +5,21 @@
 	export let data: LayoutData;
 </script>
 
-<nav>
-	<ul />
-	<ul>
-		{#each data.menus as menu (menu.id)}
-			<li>
-				<a href="{base}/{menu.menuUrl}" role="button">
-					{menu.menuName}
-				</a>
-			</li>
-		{/each}
-	</ul>
+<nav class="navbar bg-base-100">
+	<div class="flex-1 text-info font-bold">
+		<a class="btn btn-ghost text-xl" href="{base}/"> Erick's </a>
+	</div>
+	<div class="flex-none">
+		<ul class="menu menu-horizontal px-4">
+			{#each data.menus as menu (menu.id)}
+				{#if menu.menuUrl != ''}
+					<li class="text-success">
+						<a href="{base}/{menu.menuUrl}" role="button">
+							{menu.menuName}
+						</a>
+					</li>
+				{/if}
+			{/each}
+		</ul>
+	</div>
 </nav>
-
-<style>
-	nav {
-		padding-right: 2em;
-		background-color: var(--primary);
-		margin-bottom: 1em;
-	}
-</style>
