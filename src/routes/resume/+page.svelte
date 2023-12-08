@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { base } from '$app/paths';
 	import SideBar from '../../components/Layout/sideBar.svelte';
 </script>
 
@@ -25,12 +24,12 @@
 	</div>
 </div>
 
-<div class="flex flex-col items-center p-4">
+<div class="flex flex-col items-center p-4 lg:w-2/3 mx-auto">
 	<div class="card bg-base-200 relative p-4 w-full">
 		<div class="absolute right-5 top-5">
 			<SideBar />
 		</div>
-		<article class="prose">
+		<article class="prose p-4 lg:p-10">
 			<h3 class="text-accent font-bold">Education</h3>
 			<div class="grid">
 				<hgroup>
