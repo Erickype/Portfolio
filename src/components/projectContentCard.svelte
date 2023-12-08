@@ -9,7 +9,7 @@
 	{#each data as moreContent, i}
 		{#if i % 2 == 0}
 			<div class="card lg:card-side bg-base-200 shadow-xl mb-4">
-				<figure>
+				<figure class="lg:w-1/2 lg:h-1/2">
 					<img
 						src="{imageStoreUrl}/{moreContent.id}/{moreContent.image}"
 						alt={moreContent.projectName}
@@ -32,7 +32,7 @@
 						<a class="btn btn-secondary" href={moreContent.url}>Github</a>
 					</div>
 				</div>
-				<figure>
+				<figure class="lg:w-1/2 lg:h-1/2">
 					<img
 						src="{imageStoreUrl}/{moreContent.id}/{moreContent.image}"
 						alt={moreContent.projectName}
