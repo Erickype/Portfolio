@@ -1,5 +1,4 @@
-import type { IMoreAboutContent } from '$lib/interfaces/iMenu';
-import { pb } from '$lib/pocketbase';
+/* import type { IMoreAboutContent } from '$lib/interfaces/iMenu';
 import { error } from '@sveltejs/kit';
 import type { PageServerLoad } from './$types';
 
@@ -36,3 +35,4 @@ async function getMoreAboutContent(slug: string) {
 
 	return data;
 }
+ */

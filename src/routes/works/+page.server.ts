@@ -1,4 +1,4 @@
-import type { IMoreAboutContent } from '$lib/interfaces/iMenu';
+/* import type { IMoreAboutContent } from '$lib/interfaces/iMenu';
 import { pb } from '$lib/pocketbase';
 import type { PageServerLoad } from './$types';
 
@@ -26,3 +26,4 @@ async function getWorksContent() {
 
 	return data;
 }
+ */
