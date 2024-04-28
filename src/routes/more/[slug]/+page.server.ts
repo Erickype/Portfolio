@@ -10,7 +10,7 @@ export const load = (async ({ params }) => {
 			moreAboutContent: content
 		};
 	}
-	throw error(404, 'Not found');
+	error(404, 'Not found');
 }) satisfies PageServerLoad;
 
 async function getMoreAboutContent(slug: string) {

@@ -1,25 +1,16 @@
 <script lang="ts">
-	import '../app.css';
+	import "../app.pcss";
+    import "../app.pcss";
 
-	import type { LayoutData } from './$types';
-	import NavBar from '../components/Layout/navBar.svelte';
-	import Footer from '../components/Layout/footer.svelte';
-
-	export let data: LayoutData;
-
-	let title = 'Erick Carrasco';
+    let title = "Erick Carrasco";
 </script>
 
 <svelte:head>
 	<title>{title}</title>
 </svelte:head>
 
-<NavBar {data} />
-
-<main class="container">
+<main class="container bg-background">
 	<section>
-		<slot />
+		<slot></slot>
 	</section>
 </main>
-
-<Footer />
