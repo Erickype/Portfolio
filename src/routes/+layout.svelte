@@ -3,6 +3,8 @@
 
 	import { ModeWatcher } from "mode-watcher";
 
+	import NavBar from "$lib/components/Layout/navBar.svelte";
+
 	let title = "Erick Carrasco";
 </script>
 
@@ -10,10 +12,12 @@
 	<title>{title}</title>
 </svelte:head>
 
-<ModeWatcher/>
+<ModeWatcher />
 
-<main class="container bg-background">
-	<section>
+<div class="flex min-h-screen w-full flex-col">
+	<NavBar></NavBar>
+
+	<main class="flex flex-1 flex-col gap-4 p-4 md:gap-8 md:p-8 lg:mx-32 h-full">
 		<slot></slot>
-	</section>
-</main>
+	</main>
+</div>

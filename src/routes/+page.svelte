@@ -27,7 +27,7 @@
 	</div>
 </div> -->
 
-<div class="flex justify-center items-center h-screen">
+<div class="flex justify-center items-center gap-6 min-h-fit h-[80vh]">
 	<h1 class="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
 		<div class="flex items-center gap-2 mb-2">
 			<p>

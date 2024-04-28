@@ -1,5 +1,5 @@
 <script lang="ts">
-	import SideBar from '../../components/Layout/sideBar.svelte';
+	import SideBar from '$lib/components/Layout/sideBar.svelte';
 </script>
 
 <div class="flex flex-col items-center text-center mb-4">
