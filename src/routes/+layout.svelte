@@ -1,13 +1,16 @@
 <script lang="ts">
 	import "../app.pcss";
-    import "../app.pcss";
 
-    let title = "Erick Carrasco";
+	import { ModeWatcher } from "mode-watcher";
+
+	let title = "Erick Carrasco";
 </script>
 
 <svelte:head>
 	<title>{title}</title>
 </svelte:head>
+
+<ModeWatcher/>
 
 <main class="container bg-background">
 	<section>
