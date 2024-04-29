@@ -1,35 +1,8 @@
 <script lang="ts">
-    import ArrowRigth from "lucide-svelte/icons/arrow-right";
-    import { Button } from "$lib/components/ui/button/index.js";
     import * as Card from "$lib/components/ui/card/index.js";
-    import type { Experience } from "./types";
+    import type { Experience } from "@prisma/client";
 
-    const experiences: Experience[] = [
-        {
-            title: "Fullstack programmer",
-            company: "Oscus Coop.",
-            project: "Scanned Documents Digitalization Automation",
-            activities: [
-                "Requirement analysis and design",
-                "Developed a proxy rest application in C# to consume internal API's",
-                "Implemented scanner automatic scanning",
-                "Management of Apache Artemis MQ",
-                "Developed a Java application to process MQ and upload documents to Amazon S3"
-            ],
-        },
-        {
-            title: "Fullstack programmer",
-            company: "Empresa Eléctrica Ambato S.A. (EEASA)",
-            project: "Contractor dashboard maintenance",
-            activities: [
-                "Requirement analysis and design",
-                "Developed a proxy rest application in C# to consume internal API's",
-                "Implemented scanner automatic scanning",
-                "Management of Apache Artemis MQ",
-                "Developed a Java application to process MQ and upload documents to Amazon S3"
-            ],
-        },
-    ];
+    export let experiences: Experience[];
 </script>
 
 <div class="flex flex-col">
@@ -44,7 +17,7 @@
             <Card.Root class="bg-background/50">
                 <Card.Header>
                     <Card.Title class="text-pretty text-primary"
-                        >{experience.project} ({experience.title})</Card.Title
+                        >{experience.project} ({experience.jobTitle})</Card.Title
                     >
                     <Card.Description>{experience.company}</Card.Description>
                 </Card.Header>
@@ -68,12 +41,14 @@
                             </div>
                         {/each}
                     </div>
+                    <div class="grid grid-cols-3 gap-2">
+                        {#each experience.technologies as technology}
+                            <a class="border text-center" href="/">
+                                {technology}
+                            </a>
+                        {/each}
+                    </div>
                 </Card.Content>
-                <Card.Footer>
-                    <Button class="w-full">
-                        <ArrowRigth class="mr-2 h-4 w-4" /> More
-                    </Button>
-                </Card.Footer>
             </Card.Root>
         {/each}
     </div>
