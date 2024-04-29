@@ -1,8 +1,11 @@
 <script lang="ts">
 	import Hero from "$lib/components/Home/hero.svelte";
+	import Experience from "$lib/components/Home/experience.svelte";
 </script>
 
 <Hero></Hero>
+
+<Experience></Experience>
 
 <!-- <div id="projectsSection" class="flex flex-col items-center min-h-screen">
 	<h4 class="text-2xl font-bold text-success">Principal skills</h4>
