@@ -1,11 +1,9 @@
 <script lang="ts">
     import CodeBrakets from "$lib/assets/codeBrakets.gif";
-    import Mail from "lucide-svelte/icons/mail";
-    import LinkedIn from "lucide-svelte/icons/linkedin";
-    import Github from "lucide-svelte/icons/github";
 
-    import { Button } from "$lib/components/ui/button/index.js";
     import * as Avatar from "$lib/components/ui/avatar/index.js";
+
+    import SocialNetwork from "../util/socialNetwork.svelte";
 </script>
 
 <div
@@ -45,27 +43,7 @@
             <Avatar.Fallback>EC</Avatar.Fallback>
         </Avatar.Root>
         <div class="flex mt-6 px-6 py-4 gap-4">
-            <Button
-                href="https://www.linkedin.com/in/erick-carrasco-santos"
-                variant="outline"
-                size="icon"
-            >
-                <LinkedIn class="h-4 w-4" />
-            </Button>
-            <Button
-                href="https://github.com/Erickype"
-                variant="outline"
-                size="icon"
-            >
-                <Github class="h-4 w-4" />
-            </Button>
-            <Button
-                href="mailto:erickype@hotmail.com"
-                variant="outline"
-                size="icon"
-            >
-                <Mail class="h-4 w-4" />
-            </Button>
+            <SocialNetwork buttonVariant={"outline"}></SocialNetwork>
         </div>
     </div>
 </div>
