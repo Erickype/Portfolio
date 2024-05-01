@@ -7,6 +7,11 @@ export const load: PageServerLoad = async () => {
             orderBy: {
                 id: 'asc'
             }
+        }),
+        personalProjects: await prisma.personalProject.findMany({
+            orderBy:{
+                createdAt: 'asc'
+            }
         })
     }
 };
