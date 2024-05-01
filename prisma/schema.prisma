@@ -26,3 +26,15 @@ model Experience {
   technologies String[]
   createdAt    DateTime @default(now())
 }
+
+model PersonalProject {
+  id              Int      @id @default(autoincrement())
+  name            String
+  description     String
+  characteristics String[]
+  technologies    String[]
+  github          String
+  link            String
+  imageURL        String
+  createdAt       DateTime @default(now())
+}
