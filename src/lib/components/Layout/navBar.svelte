@@ -11,10 +11,10 @@
 			label: "Home",
 			path: "/",
 		},
-		{
+		/* 		{
 			label: "Projects",
 			path: "/projects",
-		},
+		}, */
 		{
 			label: "About me",
 			path: "/about",
@@ -77,14 +77,16 @@
 		<Sheet.Content side="left">
 			<nav class="grid gap-6 text-lg font-medium">
 				{#each navItems as { label, path }}
-					<a
-						id={path}
-						href={path}
-						class="text-muted-foreground transition-colors hover:text-foreground"
-						on:click={manageSelection}
-					>
-						{label}
-					</a>
+					<Sheet.Close>
+						<a
+							id={path}
+							href={path}
+							class="text-muted-foreground transition-colors hover:text-foreground"
+							on:click={manageSelection}
+						>
+							{label}
+						</a>
+					</Sheet.Close>
 				{/each}
 			</nav>
 		</Sheet.Content>
