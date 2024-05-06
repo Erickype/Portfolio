@@ -48,9 +48,11 @@
                     </div>
                     <div class="grid grid-cols-3 gap-2 mb-4">
                         {#each project.technologies as technology}
-                            <a class="border text-center" href="/">
-                                {technology}
-                            </a>
+                            <img
+                                class="w-12 h-12 m-auto place-content-center"
+                                src={`/src/lib/assets/icons/${technology}.svg`}
+                                alt={`${technology} icon`}
+                            />
                         {/each}
                     </div>
                 </Card.Content>
