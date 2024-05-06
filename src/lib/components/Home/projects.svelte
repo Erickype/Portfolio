@@ -50,7 +50,7 @@
                         {#each project.technologies as technology}
                             <img
                                 class="w-12 h-12 m-auto place-content-center"
-                                src={`/src/lib/assets/icons/${technology}.svg`}
+                                src={`icons/${technology}.svg`}
                                 alt={`${technology} icon`}
                             />
                         {/each}
