@@ -22,10 +22,10 @@
 			class="text-muted-foreground font-semibold transition-colors hover:text-foreground"
 			href="/">Home</a
 		>
-		<a
+	<!-- 	<a
 			class="text-muted-foreground font-semibold transition-colors hover:text-foreground"
 			href="/projects">Projects</a
-		>
+		> -->
 		<a
 			class="text-muted-foreground font-semibold transition-colors hover:text-foreground"
 			href="/about">About me</a
