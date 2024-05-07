@@ -11,7 +11,7 @@
 
 <div class="flex flex-col mt-10">
     <h1
-        class="scroll-m-20 text-3xl font-extrabold tracking-tight lg:text-5xl mb-4"
+        class="scroll-m-20 text-xl font-extrabold tracking-tight lg:text-5xl mb-4 overflow-auto"
     >
         Personal Projects
     </h1>
@@ -23,11 +23,22 @@
                     <Card.Title class="text-pretty text-primary"
                         >{project.name}</Card.Title
                     >
-                    <Card.Description>{project.description}</Card.Description>
+                    <Card.Description
+                        class="text-pretty text-[9px] lg:text-sm pr-4"
+                        >{project.description}</Card.Description
+                    >
                 </Card.Header>
                 <Card.Content class="grid gap-4">
-                    <img src={project.imageURL} alt={project.name} />
-                    <h1 class="text-base text-muted-foreground font-semibold">
+                    <div class="flex">
+                        <img
+                            class="w-full"
+                            src={project.imageURL}
+                            alt={project.name}
+                        />
+                    </div>
+                    <h1
+                        class="text-sm lg:text-base text-muted-foreground font-semibold"
+                    >
                         Principal characteristics
                     </h1>
                     <div class="mb-4">
@@ -39,7 +50,7 @@
                                     class="flex h-2 w-2 translate-y-1 rounded-full bg-primary"
                                 />
                                 <div class="space-y-1">
-                                    <p class="text-sm leading-none">
+                                    <p class="text-xs lg:text-sm leading-none">
                                         {characteristic}
                                     </p>
                                 </div>
@@ -49,7 +60,7 @@
                     <div class="grid grid-cols-3 gap-2 mb-4">
                         {#each project.technologies as technology}
                             <img
-                                class="w-12 h-12 m-auto place-content-center"
+                                class="w-8 h-8 lg:w-12 lg:h-12 m-auto place-content-center"
                                 src={`icons/${technology}.svg`}
                                 alt={`${technology} icon`}
                             />

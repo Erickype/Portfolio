@@ -3,13 +3,11 @@
     import type { Experience } from "@prisma/client";
 
     export let experiences: Experience[];
-
-    const images = import.meta.glob("$lib/assets/icons/*.svg", { eager: true });
 </script>
 
 <div class="flex flex-col">
     <h1
-        class="scroll-m-20 text-3xl font-extrabold tracking-tight lg:text-5xl mb-4"
+        class="scroll-m-20 text-xl font-extrabold tracking-tight lg:text-5xl mb-4"
     >
         Experience
     </h1>
@@ -21,7 +19,9 @@
                     <Card.Title class="text-pretty text-primary"
                         >{experience.project} ({experience.jobTitle})</Card.Title
                     >
-                    <Card.Description>{experience.company}</Card.Description>
+                    <Card.Description class="text-xs lg:text-sm"
+                        >{experience.company}</Card.Description
+                    >
                 </Card.Header>
                 <Card.Content class="grid gap-4">
                     <h1 class="text-base text-muted-foreground font-semibold">
@@ -36,7 +36,7 @@
                                     class="flex h-2 w-2 translate-y-1 rounded-full bg-primary"
                                 />
                                 <div class="space-y-1">
-                                    <p class="text-sm leading-none">
+                                    <p class="text-xs lg:text-sm leading-none">
                                         {activity}
                                     </p>
                                 </div>

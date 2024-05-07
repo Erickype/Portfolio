@@ -11,7 +11,7 @@
 >
     <div class="px-4 lg:w-1/2">
         <h1
-            class="scroll-m-20 text-3xl font-extrabold tracking-tight lg:text-5xl"
+            class="scroll-m-20 text-2xl font-extrabold tracking-tight lg:text-5xl"
         >
             <div class="flex items-center gap-2 mb-2">
                 <p>
@@ -31,7 +31,9 @@
                 Software Engineer
             </code>
         </h1>
-        <p class="py-6 leading-7 [&:not(:first-child)]:mt-6">
+        <p
+            class="text-sm lg:text-base py-6 leading-7 [&:not(:first-child)]:mt-6"
+        >
             Experienced in different areas of software development. Excited to
             join a team of passionate individuals and work in an engaging
             project.
