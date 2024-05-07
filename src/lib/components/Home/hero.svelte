@@ -1,5 +1,6 @@
 <script lang="ts">
     import CodeBrakets from "$lib/assets/codeBrakets.gif";
+    import Me from "$lib/assets/me.webp";
 
     import * as Avatar from "$lib/components/ui/avatar/index.js";
 
@@ -41,7 +42,7 @@
     </div>
     <div class="flex flex-col lg:w-1/2 justify-center items-center">
         <Avatar.Root class="w-24 h-24 lg:w-60 lg:h-60">
-            <Avatar.Image src="https://github.com/shadcn.png" alt="@shadcn" />
+            <Avatar.Image src={Me} alt="@shadcn" />
             <Avatar.Fallback>EC</Avatar.Fallback>
         </Avatar.Root>
         <div class="flex mt-6 px-6 py-4 gap-4">
