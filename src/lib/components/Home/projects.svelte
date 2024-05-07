@@ -23,10 +23,9 @@
                     <Card.Title class="text-pretty text-primary"
                         >{project.name}</Card.Title
                     >
-                    <Card.Description
-                        class="text-pretty text-[9px] lg:text-sm pr-4"
-                        >{project.description}</Card.Description
-                    >
+                    <div class="text-pretty text-xs lg:text-sm pr-4">
+                        {project.description}
+                    </div>
                 </Card.Header>
                 <Card.Content class="grid gap-4">
                     <div class="flex">
