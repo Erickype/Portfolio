@@ -6,7 +6,7 @@
 
 <aside>
 	<nav>
-		<ul class="grid gap-y-0.5">
+		<ul class="grid gap-y-2">
 			<li>
 				<a href="{base}/resume.pdf" class="download" download="">
 					<svg
