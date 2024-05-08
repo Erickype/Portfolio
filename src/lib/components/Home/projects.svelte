@@ -11,7 +11,7 @@
 
 <div class="flex flex-col mt-10">
     <h1
-        class="scroll-m-20 text-xl font-extrabold tracking-tight lg:text-5xl mb-4 overflow-auto"
+        class="scroll-m-20 text-xl font-extrabold tracking-tight lg:text-5xl mb-4"
     >
         Personal Projects
     </h1>
