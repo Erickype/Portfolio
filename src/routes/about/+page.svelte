@@ -32,7 +32,7 @@
 		</div>
 		<div class="grid grid-cols-2 lg:grid-cols-4 items-center justify-center place-content-center">
 			<Button
-				href="resume.pdf"
+				href="Erick Carrasco - Software Engineer.pdf"
 				variant="ghost"
 				size="icon"
 				target="_blank"
