@@ -1,25 +1,26 @@
 <script lang="ts">
-	import '../app.css';
+	import "../app.pcss";
 
-	import type { LayoutData } from './$types';
-	import NavBar from '../components/Layout/navBar.svelte';
-	import Footer from '../components/Layout/footer.svelte';
+	import { ModeWatcher } from "mode-watcher";
 
-	export let data: LayoutData;
+	import NavBar from "$lib/components/Layout/navBar.svelte";
+	import Footer from "$lib/components/Layout/footer.svelte";
 
-	let title = 'Erick Carrasco';
+	let title = "Erick Carrasco";
 </script>
 
 <svelte:head>
 	<title>{title}</title>
 </svelte:head>
 
-<NavBar {data} />
+<ModeWatcher />
 
-<main class="container">
-	<section>
-		<slot />
-	</section>
-</main>
+<div class="flex min-h-screen w-full flex-col bg-muted/40">
+	<NavBar></NavBar>
 
-<Footer />
+	<main class="flex flex-1 flex-col gap-4 p-4 md:gap-8 md:p-8 lg:mx-32 h-full">
+		<slot></slot>
+	</main>
+
+	<Footer></Footer>
+</div>

@@ -1,11 +1,17 @@
-import type { PageServerLoad } from './$types';
-import { homeName } from '$lib/constants';
-import { fetchMenuContent } from '$lib/functions';
+import { prisma } from "$lib/server/prisma";
+import type { PageServerLoad } from "./$types";
 
-export const load = (async ({ parent }) => {
-	const menus = await parent();
-	const menu = menus.menus.find((menu: { menuName: string; }) => menu.menuName === homeName)!.id;
-	return {
-		contents: await fetchMenuContent(menu)
-	};
-}) satisfies PageServerLoad;
+export const load: PageServerLoad = async () => {
+    return{
+        experiences: await prisma.experience.findMany({
+            orderBy: {
+                id: 'asc'
+            }
+        }),
+        personalProjects: await prisma.personalProject.findMany({
+            orderBy:{
+                createdAt: 'asc'
+            }
+        })
+    }
+};

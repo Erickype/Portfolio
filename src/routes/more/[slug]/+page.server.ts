@@ -1,5 +1,4 @@
-import type { IMoreAboutContent } from '$lib/interfaces/iMenu';
-import { pb } from '$lib/pocketbase';
+/* import type { IMoreAboutContent } from '$lib/interfaces/iMenu';
 import { error } from '@sveltejs/kit';
 import type { PageServerLoad } from './$types';
 
@@ -10,7 +9,7 @@ export const load = (async ({ params }) => {
 			moreAboutContent: content
 		};
 	}
-	throw error(404, 'Not found');
+	error(404, 'Not found');
 }) satisfies PageServerLoad;
 
 async function getMoreAboutContent(slug: string) {
@@ -36,3 +35,4 @@ async function getMoreAboutContent(slug: string) {
 
 	return data;
 }
+ */

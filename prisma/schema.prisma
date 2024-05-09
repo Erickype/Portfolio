@@ -1,0 +1,40 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  // Uses connection pooling
+  url       = env("POSTGRES_PRISMA_URL")
+  // Uses direct connection, ⚠️ make sure to keep this to `POSTGRES_URL_NON_POOLING`
+  // or you'll have dangling databases from migrations
+  directUrl = env("POSTGRES_URL_NON_POOLING")
+}
+
+model Experience {
+  id           Int      @id @default(autoincrement())
+  jobTitle     String
+  company      String
+  project      String
+  activities   String[]
+  technologies String[]
+  createdAt    DateTime @default(now())
+}
+
+model PersonalProject {
+  id              Int      @id @default(autoincrement())
+  name            String
+  description     String
+  characteristics String[]
+  technologies    String[]
+  github          String
+  link            String
+  imageURL        String
+  createdAt       DateTime @default(now())
+}
